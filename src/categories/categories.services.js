@@ -59,3 +59,11 @@ const deleteCategory = (req, res) => {
       res.status(404).json({message: err.message})
     })
 }
+
+
+module.exports = {
+  getAllCategories,
+  getCategoryById,
+  postCategory,
+  deleteCategory
+}
