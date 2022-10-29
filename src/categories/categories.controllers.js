@@ -13,8 +13,8 @@ const getCategoryById = async (id) => {
 }
 
 //Controller to create a category
-const createCategory = async (title) => {
-  const data = await Categories.create({title})
+const createCategory = async (name) => {
+  const data = await Categories.create({name})
   return data
 }
 
