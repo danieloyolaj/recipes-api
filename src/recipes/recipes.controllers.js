@@ -24,7 +24,7 @@ const createRecipe = async (data) => {
     origin: data.origin,
     likes: data.likes
   })
-  return data
+  return response
 }
 
 const updateRecipe = async (id, data) => {
