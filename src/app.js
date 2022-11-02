@@ -1,5 +1,6 @@
 //? Dependencies
 const express = require('express');
+const cors = require('cors')
 const db = require('./utils/database')
 
 
@@ -15,6 +16,11 @@ const initModels = require('./models/initModels')
 //? Initial Configs
 const app = express()
 
+// const corsConf = {
+
+// } Here we configure cors and then pass the corsConf object to the app.use(cors())
+
+app.use(cors())
 app.use(express.json())
 
 db.authenticate()
