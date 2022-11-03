@@ -11,12 +11,9 @@ const getTypeById = async (id) => {
   return data
 }
 
-const createType = async (data) => {
-  const response = await typesModel.create({
-    id: data.id, //Check if this is correct
-    name: data.name
-  })
-  return response
+const createType = async (name) => {
+  const data = await typesModel.create({ name })
+  return data
 }
 
 const updateType = async (id, data) => {
