@@ -30,3 +30,13 @@ describe('Test de la funcion sumar', () => {
     done()
   })
 })
+
+describe('User controller', () => {
+  it('Should return all users', (done) => {
+    getAllUsers()
+      .then(data => {
+        assert.typeOf(data, 'array') 
+        done()
+      })
+  })
+})
