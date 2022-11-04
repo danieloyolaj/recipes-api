@@ -30,10 +30,6 @@ const Users = db.define("users", {
     type: DataTypes.STRING,
     allowNull: false
   },
-  role: {
-    type: DataTypes.STRING,
-    allowNull: false
-  },
   phone: {
     type: DataTypes.STRING, // +52 
     allowNull: false,

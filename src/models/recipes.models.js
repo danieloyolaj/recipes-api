@@ -13,7 +13,7 @@ const Recipes = db.define('recipes', {
     title: {
         type: DataTypes.STRING,
         allowNull: false,
-        //? Min validate 
+        // Min validate 
         validate: {
             min: 5
         }
@@ -25,7 +25,7 @@ const Recipes = db.define('recipes', {
     urlImg : {
         type: DataTypes.STRING,
         validate: {
-            isUrl: true
+            // isUrl: true
         },
         field: 'url_img'
     },
