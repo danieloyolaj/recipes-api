@@ -106,6 +106,7 @@ const getMyRecipes = async (userId) => {
     attributes: ['ingredientId'],
     where: {userId}
   })
+  //Mapping the result to make it an array of strings
   const filteredIngredients = userIngredients.map(obj => obj.ingredientId)
   const recipeIngredients = await RecipeIngredients.findAll({
     where: {
