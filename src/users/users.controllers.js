@@ -8,7 +8,8 @@ const getAllUsers = async () => {
     const data = await Users.findAll({
         where: {
             status: 'active'
-        }
+        },
+        attributes: ['id', 'firstName', 'lastName']
     })
     return data
 }
